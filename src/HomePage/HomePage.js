@@ -22,6 +22,7 @@ function HomePage() {
   });
 
   useEffect(() => {
+    // Note: the backend server is now on port 3001 since React defaults to 3000
     axios.get("http://localhost:3001/budget").then(function (res) {
       let currData = chartData;
 
